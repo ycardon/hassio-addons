@@ -1,0 +1,46 @@
+{
+    "name": "Gigaset-Elements proxy",
+    "version": "1.0",
+    "slug": "gigaset",
+    "description": "A simple web and MQTT bridge to gigaset-elements APIs",
+    "url": "https://github.com/ycardon/gigaset-elements-proxy",
+
+    "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
+    "startup": "system",
+    "boot": "auto",
+    "host_network": false,
+    "services": ["mqtt:want"],
+
+    "ingress": true,
+    "ingress_port" : 8094,
+    "ports": {
+        "8094/tcp": 8094
+    },
+    "ports_description": {
+        "8094/tcp": "REST API (if needed)"
+    },
+    "panel_icon": "mdi:motion-sensor",
+
+    "options": {
+        "email": null,
+        "password": null,
+        "check_events_interval": 10,
+        "mqtt_url": "mqtt://mosquitto_host:1883",
+        "mqtt_options": {
+            "clientId": "addon-gigaset",
+            "username": null,
+            "password": null
+        }
+    },
+    "schema": {
+        "email": "email",
+        "password": "str",
+        "check_events_interval": "int",
+        "mqtt_url": "url",
+        "mqtt_options": {
+            "clientId": "str?",
+            "username": "str?",
+            "password": "str?"
+        }
+    }
+}
