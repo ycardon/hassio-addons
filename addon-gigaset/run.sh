@@ -12,4 +12,8 @@ cp /data/options.json ./config/local.json
 ## LAUNCH GIGASET
 
 echo --------------------------------
-node app.js
+while :
+do
+    node app.js
+    echo $(date) --- gigaset-elements-proxy exited --- restarting
+done
