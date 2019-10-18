@@ -1,6 +1,6 @@
 {
     "name": "Gigaset-Elements proxy",
-    "version": "1.1",
+    "version": "1.2",
     "slug": "gigaset",
     "description": "A simple web and MQTT bridge to gigaset-elements APIs",
     "url": "https://github.com/ycardon/gigaset-elements-proxy",
@@ -30,7 +30,8 @@
             "clientId": "addon-gigaset",
             "username": null,
             "password": null
-        }
+        },
+        "allow_unknown_events": false
     },
     "schema": {
         "email": "email",
@@ -41,6 +42,7 @@
             "clientId": "str?",
             "username": "str?",
             "password": "str?"
-        }
+        },
+        "allow_unknown_events": "bool"
     }
 }
