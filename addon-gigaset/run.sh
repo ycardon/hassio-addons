@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # WORKING DIR
 cd /usr/src/gigaset-elements-proxy
 
