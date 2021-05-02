@@ -18,5 +18,6 @@ https://github.com/ycardon/hassio-addons
 
 ### [Gigaset-Elements proxy](https://github.com/ycardon/gigaset-elements-proxy)
 
+> This Addon is not maintained anymore, you can use https://github.com/dynasticorpheus/gigasetelements-ha as a replacement.
+
 A simple web and MQTT bridge to gigaset-elements APIs
-- TODO: automatic connexion to Mosquitto Addon
