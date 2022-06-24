@@ -1,8 +1,8 @@
 ---
 # from https://github.com/home-assistant/addons/blob/master/letsencrypt/config.yaml
-version: 4.12.3
+version: 4.12.4
 slug: letsencrypt-bis
-name: Let's Encrypt BIS (second instance)
+name: Let's Encrypt (second instance)
 description: Manage certificate from Let's Encrypt (second instance)
 url: https://github.com/home-assistant/hassio-addons/tree/master/letsencrypt
 arch:
